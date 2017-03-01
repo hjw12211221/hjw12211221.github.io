@@ -1,0 +1,121 @@
+
+/**********页面7****************/
+
+.page_7.active .car {
+	-webkit-animation: p7_car 2s, p7_carchange 3000ms 3s steps(6, start);
+	animation: p7_car 2s, p7_carchange 3000ms 3s steps(6, start);
+}
+@-webkit-keyframes p7_car {
+	from {
+		left: 100%;
+		top: 100%;
+	}
+	to {
+		left: 17.5%;
+		top: 42%;
+	}
+}
+@keyframes p7_car{
+	from{
+		left: 100%;
+		top: 100%;
+	}
+	to{
+		left: 17.5%;
+		top: 42%;
+	}
+}
+@-webkit-keyframes p7_carchange {
+	0% {
+		background-position: -0% 0px;
+	}
+	100% {
+		background-position: -600% 0px;
+	}
+}
+@keyframes p7_carchange {
+	0% {
+		background-position: -0% 0px;
+	}
+	100% {
+		background-position: -600% 0px;
+	}
+}
+
+/***********音乐*****************/
+.music-animate{
+	-webkit-animation: music linear infinite 5s;
+	animation: music linear infinite 5s;
+}
+@-webkit-keyframes music{
+	from{
+		-webkit-transform: rotate(0);
+
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes music{
+	from{
+		transform: rotate(0);
+
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+/************页面6********************/
+.page_6.active .mobile {
+	-webkit-animation: p6_textshow 4.5s steps(4) forwards;
+	animation: p6_textshow 4.5s steps(4) forwards;
+}
+@-webkit-keyframes p6_textshow {
+	0% {
+		background-position: -0% 0px;
+	}
+	100% {
+		background-position: -400% 0px;
+	}
+}
+@keyframes p6_textshow {
+	0% {
+		background-position: -0% 0px;
+	}
+	100% {
+		background-position: -400% 0px;
+	}
+}
+
+.page_6.active .car {
+	-webkit-animation: p6_carshow 4s 0s steps(4,start) , p6_carrun 1s 5s forwards ease-out;
+	animation: p6_carshow 4s 0s steps(4,start) , p6_carrun 1s 5s forwards ease-out;
+}
+@-webkit-keyframes p6_carshow {
+	0% {
+		background-position: 0% 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
+@keyframes p6_carshow {
+	0% {
+		background-position: 0% 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
+@keyframes p6_carrun {
+	to {
+		left: -207px;
+	}
+}
+@-webkit-keyframes p6_carrun {
+	to {
+		left: -207px;
+	}
+}

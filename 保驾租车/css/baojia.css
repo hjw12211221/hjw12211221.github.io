@@ -1,0 +1,366 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+.clearfix:before{
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+	position: relative;
+	width: 800%;
+	height: 100%;
+}
+.container>.page{
+	height: 100%;
+	float: left;
+	width: 12.5%;
+	background: white;
+}
+
+
+/*******页面1******/
+.page_1 {
+  position: relative;
+}
+.page_1 .page1_top {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 23%;
+}
+.page_1 .page1_top :first-child {
+  width: 46.875%;
+}
+.page_1 .page1_top :last-child {
+  width: 20.3125%;
+  height: auto;
+}
+.page_1 .page1_center {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 32%;
+}
+.page_1 .page1_center > * {
+  width: 50.9375%;
+}
+.page_1 .page1_bottom {
+  position: absolute;
+  bottom: 13.204%;
+  background: #E5E5E5;
+  padding: 2px;
+  border-radius: 50%/5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.page_1 .page1_bottom .jindutiao {
+  width: 13px;
+  height: 170.5px;
+  background: url("../img/t-1_3.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 2px;
+  text-align: center;
+}
+.page_1 .page1_bottom .jindutiao .befg {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  height: 0;
+  width: calc(100% - 5px);
+  background: #00B9D7;
+  border-radius: 13px;
+}
+.page_1 .page1_bottom .jindutiao #t1car {
+  position: absolute;
+  width: 23px;
+  left: -4px;
+  top: 0;
+}
+.page_1 .page1_bottom .jindutiao #t1car > img {
+  width: 100%;
+}
+
+/*******页面2****************/
+.page_2 {
+  position: relative;
+  text-align: center;
+}
+.page_2 .tuodong {
+  position: absolute;
+  top: 6%;
+  width: 19%;
+  left: calc(48%);
+}
+.page_2 .tuodong > img {
+  width: 100%;
+}
+.page_2 .car {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  position: absolute;
+  width: 10%;
+  top: 26%;
+  left: calc(45%);
+  z-index: 1;
+}
+.page_2 .car > img {
+  width: 100%;
+}
+.page_2 .stopcar {
+  position: absolute;
+  width: 62.65625%;
+  left: 50%;
+  top: 36%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.page_2 .stopcar > img {
+  width: 100%;
+}
+.page_2 .page2_bottom {
+  position: absolute;
+  width: 45.78125%;
+  left: 50%;
+  top: 86.97%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.page_2 .page2_bottom > img {
+  width: 100%;
+}
+
+/*******页面3*********************/
+.page_3 {
+  position: relative;
+}
+.page_3 > div {
+  position: absolute;
+}
+.page_3 > div > img {
+  width: 100%;
+}
+.page_3 .bg {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 90.625%;
+  top: 12%;
+}
+.page_3 .mobile {
+  width: 79%;
+  top: 40%;
+}
+
+/*******页面4************************/
+.page_4 {
+  position: relative;
+}
+.page_4 .bg {
+  width: 88.75%;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+/*******页面5******************/
+.page_5 {
+  position: relative;
+}
+.page_5 .bg {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  width: 94.375%;
+}
+
+
+/***************页面6*********************/
+.page_6 {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.page_6 .page6-center {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.page_6 .page6-center .car-box {
+  position: relative;
+  width: 98%;
+  margin:0 auto;
+}
+.page_6 .bg {
+  width: 100%;
+}
+.page_6 .car,
+.page_6 .mobile {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.page_6 .car {
+  bottom: 5px;
+  height: 66px;
+  width:182px;
+  background: url('../img/6-car-img.png');
+  background-size: cover;
+  background-position: 0 0;
+}
+.page_6 .mobile {
+  height: 150px;
+  width: 180px;
+  left: 40%;
+  background: url('../img/6-text-bg.png');
+  background-size: cover;
+}
+
+/************页面7****************/
+.page_7 {
+  position: relative;
+}
+.page_7 .page7-center {
+  position: absolute;
+  width: 100%;
+  top: 14%;
+}
+.page_7 .page7-center > div {
+  width: 100%;
+  position: relative;
+}
+.page_7 .page7-center > div > img {
+  width: 100%;
+}
+.page_7 .page7-center > div .car {
+  position: absolute;
+  width: 70.3125%;
+  width: 245px;
+  left: 17.5%;
+  top: 42%;
+  height: 157.5px;
+  overflow: hidden;
+  background: url(../img/7img.png);
+  background-size: cover;
+}
+.page_7 .page7-center > div .car > img {
+  position: absolute;
+  width: 600%;
+}
+
+.div {
+  height: 315px;
+  width: 490px;/*等比例縮放*/
+  background-size: cover;
+}
+
+
+/***********页面8******************/
+.page_8 {
+  position: relative;
+}
+.page_8 .bg {
+  position: absolute;
+  width: 100%;
+  top: 14%;
+}
+
+
+/************方向盘******************/
+.common-logo {
+  position: absolute;
+  width: 65.15625%;
+  top: 4%;
+  left: 10%;
+}
+.common-logo > img {
+  width: 100%;
+}
+.common_bottom {
+  width: 140px;
+  height: 115px;
+  position: absolute;
+  bottom: 3.5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+}
+.common_bottom .fangxiang {
+  text-align: center;
+  background: url("../img/newleft-right_2.png") no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.common_bottom .fangxiang img {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+}
+.common_bottom .fangxiang .fp {
+  position: relative;
+}
+.common_bottom .fp::before {
+  content: "左转";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: -40px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.common_bottom .fp::after {
+  content: "回转";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: -40px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.music {
+  position: fixed;
+  right: 8.75%;
+  top: 4%;
+  z-index: 1;
+  width: 30px;
+}
+
+
+/*@media (min-device-width: 414px) {
+  .page_6 .car {
+    width: 220px;
+    height: 80px;
+  }
+  .page_6 .mobile {
+    width: 234px;
+    height: 194px;
+  }
+}
+@media (min-device-width: 480px) {
+  .page_6 .car {
+    width: 330px;
+    height: 120px;
+  }
+  .page_6 .mobile {
+    width: 351px;
+    height: 291px;
+  }
+}*/
+
+
+

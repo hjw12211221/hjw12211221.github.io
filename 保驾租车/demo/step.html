@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <style>
+       .car{
+           position: absolute;
+           left:0;
+           width:188.5px ;
+           height: 67.5px;
+           background-image: url(../img/6-car-img.png);
+           background-size:cover;
+           background-position: 0 0;
+           -webkit-animation: turn 4s  steps(4,start) 0s ,run 1s 5s forwards ease-out;
+           animation: turn 4s 0s steps(4,start) ,run 1s 5s forwards ease-out;
+       }
+       @-webkit-keyframes turn {
+           0%{
+               background-position: 0 0;
+           }
+           100%{
+               background-position: 100% 0;;
+           }
+       }
+        @keyframes turn {
+            0%{
+                background-position: 0 0;
+            }
+            100%{
+                background-position: 100% 0;;
+              }
+        }
+       @-webkit-keyframes run {
+           to{
+               left:-200px;
+           }
+       }
+       @keyframes run {
+           to{
+               left:-200px;
+           }
+       }
+    </style>
+</head>
+<body>
+   <div class="car"></div>
+</body>
+</html>
